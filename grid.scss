@@ -1,0 +1,71 @@
+
+$columns : 12!default;
+$space: 20px!default;
+$medium: 640px;
+$large: 1024px;
+
+%col{
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding: 0 $space * 0.5;
+}
+
+%clearfix {
+	&:before,
+	&:after {
+		content:"";
+		display: table;
+	}
+	&:after {
+		clear:both;
+	}
+	& {
+		zoom: 1;
+	}
+}
+.container {
+	margin-left: 8.5%;
+	margin-right: 8.5%;
+	@extend %clearfix;
+}
+
+.container-fluid {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin-left: 0 $space * -0.5;
+	@extend %clearfix; /* sert a replacer les divs les unes en dessous des autres */
+}
+
+@for $i from 1 through $columns{
+	.col-#{$i} {
+		@extend%col;
+		width: $i /$columns * 100%;
+	}
+	.col-m#{i}, .col-l-#{$i}{
+		@extend %col;
+	}
+}
+
+@media only screen and (min-width: $medium){
+	.col-m-center {
+		margin: 0 auto; float: none;
+	}
+	@for $i from 1 through $columns {
+		.col-m-#{$i}{
+			width: $i / $columns * 100%;
+		}
+	}
+}
+
+@media only screen and (min-width: $large){
+	@for $i from 1 through $columns  {
+		.col-l-#{$i}{
+			width: $i / $columns * 100%;
+		}
+	}
+}

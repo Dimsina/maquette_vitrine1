@@ -1,0 +1,136 @@
+@import "grid";
+@import "navbar";
+@import "animation";
+
+* {
+	font-family: "Francois One";
+	letter-spacing: 0.12em;
+	word-spacing: 0.4em;
+	color: Black;
+
+}
+body {
+	background-image: url('img/brick.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.padding {
+	padding-top: 1%;
+}
+
+.titre{
+	font-size: 1.3em;
+	text-align: center;
+	text-shadow: 1px 6px 8px yellow;
+}
+
+.description, .lien {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-shadow: 1px 6px 8px yellow;
+}
+
+.schema {
+	font-size: 1.4em;
+	text-align: center;
+	padding-bottom: 1%;
+	text-shadow: 1px 6px 8px yellow;
+}
+
+.img-haltere {
+	opacity: 0.78;
+	border-radius: 50px;
+}
+
+.img-thumbnail {
+    border-radius: 10px;
+    padding: 5px;
+    width: 500px;
+}
+
+.img-cont {
+	border-radius: 50px;
+	border-color: Grey;
+	padding: 1%;
+	margin: 0.5%;
+	width: 150px;
+}
+
+.img-grey {
+	padding: 1%;
+	margin-left: 10%;
+	width: 400px;
+	filter: grayscale(100%);
+}
+
+.arrow_left {
+	width: 0px;
+	height: 0px;
+	margin: 10px auto; 
+	border-top: 50px solid transparent;
+	border-right: 100px solid Grey;
+	border-bottom: 50px solid transparent;
+}
+
+.arrow_right {
+	width: 0px;
+	height: 0px;
+	margin: 10px auto;
+	border-top: 50px solid transparent;
+	border-left: 100px solid Grey;
+	border-bottom: 50px solid transparent;
+}
+.arrow_down {
+	width: 0px;
+	height: 0px;
+	margin: 10px auto;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid Maroon;
+}
+
+@media only screen and (max-width: 642px){
+
+	.arrow_left {
+	visibility: hidden;
+}
+
+.arrow_right {
+	visibility: hidden;
+}
+.arrow_down {
+	visibility: hidden;
+}
+
+}
+@media only screen and (max-width: 768px){
+
+	.arrow_left {
+	visibility: hidden;
+}
+
+.arrow_right {
+	visibility: hidden;
+}
+.arrow_down {
+	visibility: hidden;
+}
+
+}
+@media only screen and (max-width: 900px){
+
+	.arrow_left {
+	visibility: hidden;
+}
+
+.arrow_right {
+	visibility: hidden;
+}
+.arrow_down {
+	visibility: hidden;
+}
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Present my Meetic</title>
+	<link rel="stylesheet" href="index_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+
+</head>
+<body>
+	<div class="padding"></div>
+	<div class="container">
+		<div class="row">
+			<h1><a href="presentation.html">&#8592;</a> Schéma de la programmation</h1>
+			<div class="schema">	
+				<p>Ici je vais montrer a quoi ressemble le code de mon projet, structuré en <a href="https://openclassrooms.com/courses/apprenez-a-programmer-en-java/mieux-structurer-son-code-le-pattern-mvc">MVC</a></p>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-5">
+				<img src="img/view.png" alt="" class="img-thumbnail">
+			</div>
+			<div class="col-1">
+				<div class="arrow_left"></div>
+			</div>
+			<div class="col-5">
+				<div class="text">
+					<h3>View</h3>
+					<p>L'image de gauche présente une partie du code représentant une des 'view' (le visuel) de mon site de rencontres</p>
+					<p>C'est ce que l'utilisateur du site voit. Du moins presque, c'est la structure visuelle du site qui est programmée sur ce type de page.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="arrow_down"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col-5">
+			<img src="img/inscrip.png" alt="" class="img-thumbnail">
+		</div>
+		<div class="col-1"></div>
+		<div class="col-5">
+			<div class="text">
+				<h3>View côté site</h3>
+				<p>Voici donc ce que voit l'utilisateur du site. C'est la traduction du code avec toute la mise en page.</p>
+				<p></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-5">
+			<div class="text">
+				<h3>Model</h3>
+				<p>Ici une partie de mon code qui sert de 'model'.</p>
+				<p>C'est par ce biais que je fais des requêtes a ma base de données(BDD). La BDD est l'endroit où l'on stocke les informations des inscrits. C'est grace a ces informations stockées que l'on peut effectuer les connexions/déconnexions.</p>
+			</div>
+		</div>
+		<div class="col-1">
+			<div class="arrow_right"></div>
+		</div>
+		<div class="col-4">
+			<img src="img/model.png" alt="" class="img-thumbnail">	
+		</div>
+	</div>
+	<div class="row">
+		<div class="text">
+			<p> Le 'Model' est invisible par les utilisateurs du site. Ici il est codé en <a href="http://www.php.net/">PHP</a> et ne s'occupe que du serveur</p>
+			<p> Le 'Model' est géré par le 'Controller' qui s'occupe de donner les ordres. C'est le 'Controller' qui distribue les actions a faire si les informations données au préalables par le formulaire d'inscription, sont correctes.</p>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-5">
+			<img src="img/controller.png" alt="" class="img-thumbnail">
+		</div>
+		<div class="col-1">
+			<div class="arrow_left"></div>
+		</div>
+		<div class="col-5">
+			<div class="text">
+				<h3>Controller</h3>
+				<p>Ici le 'Controller' va vérifier si le surnom et l'email ont bien été entrées lors de la connexion, si oui, alors le controller va commander à l'action 'profil' et donc connecter l'utilisateur a sa page de profil</p>
+				<p>Autrement dit, sans lui, le script ne se lancera pas, car c'est lui qui fait la gestion d'erreurs (vérifications des infos, complètes ou non, existantes ou non etc...)</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-3">
+			<div class="text2">
+				<p>Exemple de fonctions</p>
+				<p><a href="http://php.net/manual/fr/function.isset.php">'isset'</a></p>
+				<p><a href="http://php.net/manual/fr/reserved.variables.session.php">'$_SESSION'</a></p>
+				<p><a href="http://php.net/manual/fr/function.echo.php"></a>'echo'</p>
+			</div>
+		</div>
+		<div class="col-8">
+			<div class="text3">
+				<p>Propriété des fonctions</p>
+				<p>Détermine si une variable est définie et est différente de NULL</p>
+				<p>Un tableau associatif des valeurs stockées dans les sessions, et accessible au script courant.</p>
+				<p>Affiche une chaine de caractères</p>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>
