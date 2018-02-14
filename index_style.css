@@ -267,21 +267,21 @@ ul .li {
         transform: rotate(-45deg); } }
 .text {
   font-size: 1.3em;
-  background-color: rgba(255, 153, 51, 0.8);
+  background-color: rgba(255, 153, 51, 0.6);
   text-align: center;
   animation-duration: 3s;
   animation-name: slidein; }
 
 .text2 {
   font-size: 1.3em;
-  background-color: rgba(51, 153, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   animation-duration: 3s;
   animation-name: slidein; }
 
 .text3 {
   font-size: 1.3em;
-  background-color: rgba(0, 153, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   animation-duration: 3s;
   animation-name: slidein; }
@@ -314,14 +314,13 @@ body {
   padding-top: 1%; }
 
 .titre {
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-align: center;
-  text-shadow: 1px 6px 8px yellow; }
+  text-shadow: 1px 6px 8px white; }
 
 .description, .lien {
   font-size: 1.3em;
-  font-weight: bold;
-  text-shadow: 1px 6px 8px yellow; }
+  font-weight: bold; }
 
 .schema {
   font-size: 1.4em;
